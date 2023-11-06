@@ -18,20 +18,56 @@ const jsonData = [
 
 function ProductsPage() {
   const [filterText,setFilter]= useState('');
+  const [checked,setChecked]=useState(false);
+  const [filteredProducts,setFilterProducts] = useState (jsonData);
 
-  const filteredProducts = jsonData.filter(product =>
-    product.name.toLowerCase().includes(filterText.toLowerCase()));
-
-  function dosomthing(event){
-  setFilter(event.target.value)
+  function setFilterPromise(value) {
+    return new Promise((resolve) => {
+      setFilter(value);
+      resolve(value);
+    });
+  }
+  
+  function dosomthing(event) {
+    setFilterPromise(event.target.value)
+      .then((value) => {
+        setFilterProducts(
+          jsonData.filter((product) =>
+            product.name.toLowerCase().includes(value.toLowerCase())
+          )
+        );
+      })
+      .catch((error) => {
+        
+        console.error(error);
+      });
+  }
+  
+  function doSomthingElse(){
+    if(checked===false){
+      setChecked(!checked)
+  setFilterProducts( jsonData.filter(product =>
+    product.name.toLowerCase().includes(filterText.toLowerCase())&& product.inStock))
+    }else if(checked===true){
+      setFilterProducts(
+        jsonData.filter((product) =>
+          product.name.toLowerCase().includes(filterText.toLowerCase())
+        )
+      )
+    }
+  
 }
+
 
 
   return (
     <div>
       <h1>Root Store</h1>
       <SearchBar  onChangeprop={dosomthing}  /> 
+      <input type="checkbox"   onChange={doSomthingElse}  />
+      <label>Only show Products inStock </label>
       <ProductTable  products={filteredProducts} /> 
+      
     </div>
   );
 }

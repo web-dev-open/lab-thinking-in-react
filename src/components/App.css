@@ -43,3 +43,6 @@
 .red {
   color: red;
 }
+td,tr{
+  margin: 40px;
+}
