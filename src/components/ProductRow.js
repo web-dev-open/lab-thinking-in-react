@@ -1,15 +1,15 @@
 import React from 'react'
 import './table.css'
 
-const ProductRow = ({productprop}) => {
+const ProductRow = ({productrow}) => {
   return (
    
-       <tr key={productprop.id}>
-        <td style = {{ color: productprop.inStock ?
+       <tr key={productrow.id}>
+        <td style = {{ color: productrow.inStock ?
              'black' : 'red'
-        }}>{productprop.name}</td>
+        }}>{productrow.name}</td>
 
-        <td>{productprop.price}</td>
+        <td>{productrow.price}</td>
         
         
        </tr>

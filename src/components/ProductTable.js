@@ -18,7 +18,7 @@ const ProductTable = ({products}) => {
     <tbody>
         {products.map((product)=>(
              
-             <ProductRow productprop={product}/>
+             <ProductRow productrow={product}/>
         ))}
          
     </tbody>
