@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 100px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    padding-left: 8rem;
+    padding-right: 8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+   
+}
+
+thead{
+    background-color: rgb(213, 232, 232);
+    
+}
