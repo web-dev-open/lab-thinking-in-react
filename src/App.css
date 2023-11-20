@@ -1,38 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.products-page {
+  padding: 20px;
+}
+
+.products-page h1 {
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Search bar */
+.search-bar {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+.search-bar h2 {
+  margin-bottom: 3px;
+  font-weight: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.checkbox {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.checkbox input {
+  margin-right: 5px;
+}
+
+/* Products table */
+.products-table {
+  margin-top: 4rem;
+}
+.products-table table {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.products-table thead {
+  width: 100%;
+  background-color: #e7ecef;
+  padding: 10px;
+}
+
+.products-table tbody {
+  width: 100%;
+}
+.products-table tr {
+  width: 100%;
+  display: flex;
+  height: 40px;
+  gap: 1rem;
+}
+
+.products-table th,
+td {
+  display: flex;
+  width: calc(100% / 2);
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.products-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.products-table tbody tr:hover {
+  background-color: #eaeaea;
 }
