@@ -1,5 +1,3 @@
-// src/components/ProductsPage.js
-
 import React, { useState, useEffect } from 'react';
 import jsonData from './../data.json';
 import SearchBar from './SearchBar';
