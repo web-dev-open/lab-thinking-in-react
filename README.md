@@ -4,7 +4,8 @@
 
 # LAB | Thinking in React
 
-  
+![Screenshot 2023-12-12 151626](https://github.com/Devil-2621/lab-thinking-in-react/assets/119029321/c344cafd-829c-4363-8dbd-f28d19624cdc)
+
 
 ## Introduction
 
