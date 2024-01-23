@@ -7,5 +7,5 @@
     {"category": "Electronics",     "price": "$199.99",   "inStock": true,    "name": "Huawei P10",    "id": "10858000-7894-4d77-bd0f-24639d111e74"},
     {"category": "Electronics",     "price": "$199.99",   "inStock": true,    "name": "iPad Mini",    "id": "a385a23f-07ed-4340-9ba7-937a0ce5f151"},
     {"category": "Sporting Goods",  "price": "$9.99",     "inStock": true,    "name": "Baseball",    "id": "4522f16e-3f55-4863-ae36-e935ec9cb4ef"}
-  ]
+]
   
