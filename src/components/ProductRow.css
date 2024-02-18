@@ -1,0 +1,21 @@
+.productRow {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+
+    border: none;
+
+    background-color: white;
+
+    font-size: 20px;
+
+    margin: 5px;
+}
+
+.available {
+    color: rgb(7, 7, 59);
+}
+
+.soldOut {
+    color: red;
+}
