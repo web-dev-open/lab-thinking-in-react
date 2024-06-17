@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import  "./App.css";
+import ProductsPage from "./components/ProductsPage";
+
 
 function App() {
   return (
@@ -16,6 +19,11 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+              </a>
+         <div  className="App">
+       <ProductsPage /> 
+
+</div>
         </a>
       </header>
     </div>
