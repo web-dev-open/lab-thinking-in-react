@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import ProductPage from './components/ProductPage';
+
 
 function App() {
   return (
@@ -18,8 +20,10 @@ function App() {
           Learn React
         </a>
       </header>
+
+    <ProductPage />
+
     </div>
   );
 }
-
 export default App;
