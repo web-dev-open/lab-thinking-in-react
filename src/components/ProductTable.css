@@ -1,0 +1,19 @@
+.ProductTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .ProductTable th, .ProductTable td {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    text-align: left;
+  }
+  
+  .ProductTable th {
+    background-color: #f1f1f1;
+  }
+  
+  .ProductTable tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  

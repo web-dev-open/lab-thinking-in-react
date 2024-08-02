@@ -1,0 +1,22 @@
+.SearchBar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .SearchBar input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+  }
+  
+  .SearchBar label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .SearchBar input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
