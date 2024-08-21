@@ -1,0 +1,15 @@
+#search-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  padding: 10px;
+  gap: 10px;
+}
+
+#psearch {
+  height: 30px;
+  width: 90%;
+  box-sizing: border-box;
+}

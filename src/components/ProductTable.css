@@ -1,0 +1,16 @@
+#tablebox {
+  width: 80%;
+  text-align: center;
+  border-collapse: collapse;
+  margin: 30px;
+}
+
+#tablebox th {
+  background-color: #e7ecef;
+  padding: 15px;
+}
+
+#tablebox td {
+  padding: 15px;
+  border-top: 3px solid #e7ecef;
+}
