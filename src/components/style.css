@@ -1,0 +1,77 @@
+.table-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 1500px;
+    margin-left: 0px;
+    padding-left: 200px;    
+  }
+
+  table {
+    width: 100%; 
+    max-width: 2000px; 
+    border-collapse: collapse; 
+  }
+
+  table th:first-child
+  {
+    width: 100%;    
+    padding-left: 0px;
+    padding-right: -300px;               
+  }
+
+  table th:nth-child(2) {
+    width: 300px; 
+    margin-left: 500px;
+}
+
+  table th:first-child,
+  table th:nth-child(2) 
+  {
+    background-color: rgb(209, 213, 222);
+    color: grey;    
+  }
+
+  table th,
+  table td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 300px;
+    text-align: center; 
+  }
+
+  td:first-child {
+    width: 300px; 
+    padding-left: 0px;
+  }
+
+  table th:nth-child(2) {
+    width: 150px; 
+    padding-right: -200px;
+  }
+
+   th:last-child,
+  .search-bar {
+    width: 100%; 
+    margin-bottom: 20px; 
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 8px;
+    box-sizing: border-box; 
+}
+
+div.search-title {
+  padding-bottom: 15px !important;
+}
+
+.in-stock-filter {
+  padding-bottom: 50px;
+}
+
+
+.out-of-stock {
+  color: red;
+
+}
