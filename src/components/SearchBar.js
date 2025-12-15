@@ -5,7 +5,7 @@ function SearchBar({
   onInStockChange,
 }) {
   return (
-    <div>
+    <div style={{ marginBottom: "20px" }}>
       <input
         type="text"
         placeholder="Search..."
@@ -13,16 +13,14 @@ function SearchBar({
         onChange={(e) => onSearchChange(e.target.value)}
       />
 
-      <div>
-        <label>
-          <input
-            type="checkbox"
-            checked={inStockOnly}
-            onChange={(e) => onInStockChange(e.target.checked)}
-          />
-          Only show products in stock
-        </label>
-      </div>
+      <label>
+        <input
+          type="checkbox"
+          checked={inStockOnly}
+          onChange={(e) => onInStockChange(e.target.checked)}
+        />
+        {" "}Only show products in stock
+      </label>
     </div>
   );
 }
